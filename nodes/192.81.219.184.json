@@ -1,0 +1,10 @@
+{
+  "user": {
+    "password": "$1$6oqUBrZm$/O10zMZ/XG2UIaOx8txrC."
+  },
+
+  "run_list":[
+    "recipe[nginx]",
+    "recipe[main]"
+  ]
+}
