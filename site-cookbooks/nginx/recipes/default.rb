@@ -8,3 +8,5 @@ template "/etc/nginx/nginx.conf" do
   owner "root"
   group "root"
 end
+
+execute 'invoke-rc.d nginx restart'
