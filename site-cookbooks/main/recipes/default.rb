@@ -28,3 +28,11 @@ directory "/www/jujuca/" do
   recursive true
   action :create
 end
+
+directory "/www/go_horse_go/" do
+  owner "deploy"
+  group "deploy"
+  mode "0775"
+  recursive true
+  action :create
+end
