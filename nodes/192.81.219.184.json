@@ -1,7 +1,7 @@
 {
   "run_list":[
+    "recipe[ssh]",
     "recipe[nginx]",
-    "recipe[main]",
     "recipe[nodejs]",
     "recipe[app_go_horse_go]",
     "recipe[app_jujuca]",
