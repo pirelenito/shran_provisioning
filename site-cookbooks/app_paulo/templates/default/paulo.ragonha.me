@@ -1,0 +1,25 @@
+server {
+  listen 80;
+  server_name ragonha.me;
+  rewrite ^/(.*) http://paulo.ragonha.me/$1 permanent;
+}
+
+server {
+  listen       80;
+  server_name  paulo.ragonha.me;
+
+  root /www/paulo/current;
+
+  error_page   500 502 503 504  /50x.html;
+  location = /50x.html {
+    root   html;
+  }
+}
+
+# rewrite rule of http://blog.pirelenito.org/2008/08/java-movie-playback-jogl-fobs4jmf/
+server {
+  listen 80;
+  server_name blog.pirelenito.org;
+  rewrite ^/(.*)/ http://paulo.ragonha.me/blog/$1.html permanent;
+  rewrite ^/(.*) http://paulo.ragonha.me/blog/$1 permanent;
+}

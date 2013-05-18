@@ -6,6 +6,10 @@
   "run_list":[
     "recipe[nginx]",
     "recipe[main]",
-    "recipe[nodejs]"
+    "recipe[nodejs]",
+    "recipe[app_go_horse_go]",
+    "recipe[app_jujuca]",
+    "recipe[app_moood_me]",
+    "recipe[app_paulo]"
   ]
 }
