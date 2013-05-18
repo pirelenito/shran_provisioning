@@ -1,0 +1,6 @@
+server {
+  listen       80;
+  server_name  pedal.pirelenito.org;
+
+  root /www/pedal/current/public;
+}
