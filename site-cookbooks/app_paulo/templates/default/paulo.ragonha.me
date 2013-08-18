@@ -10,9 +10,9 @@ server {
 
   root /www/paulo/current;
 
-  error_page   500 502 503 504  /50x.html;
-  location = /50x.html {
-    root   html;
+  location /tdc2013/jasmine {
+    alias /www/tdc2013_jasmine/current;
+    index index.html;
   }
 }
 
