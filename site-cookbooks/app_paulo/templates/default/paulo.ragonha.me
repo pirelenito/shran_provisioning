@@ -15,6 +15,11 @@ server {
     index index.html;
   }
 
+  location /talks {
+    alias /www/talks;
+    index index.html;
+  }
+
   rewrite ^/index\.html$ http://paulo.ragonha.me/blog/ redirect;
   rewrite ^/$ http://paulo.ragonha.me/blog/ redirect;
   rewrite ^$ http://paulo.ragonha.me/blog/ redirect;

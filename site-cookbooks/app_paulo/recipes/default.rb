@@ -27,3 +27,11 @@ directory "/www/tdc2013_jasmine/" do
   recursive true
   action :create
 end
+
+directory "/www/talks" do
+  owner "deploy"
+  group "deploy"
+  mode "0775"
+  recursive true
+  action :create
+end
