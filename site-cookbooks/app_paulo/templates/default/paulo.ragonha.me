@@ -19,10 +19,6 @@ server {
     alias /www/talks;
     index index.html;
   }
-
-  rewrite ^/index\.html$ http://paulo.ragonha.me/blog/ redirect;
-  rewrite ^/$ http://paulo.ragonha.me/blog/ redirect;
-  rewrite ^$ http://paulo.ragonha.me/blog/ redirect;
 }
 
 # rewrite rule of http://blog.pirelenito.org/2008/08/java-movie-playback-jogl-fobs4jmf/
